@@ -1,9 +1,12 @@
 <div align="center">
 
-A weather app that looks like a terminal, with 1-bit Macintosh-style icons.<br>
-Written as a web app (React + TypeScript) and packaged for Android with Capacitor.
+<img src=".github/assets/banner.gif" width="100%" alt="Just a Weather App">
+
+A weather app that looks like a terminal, Written as a web app (React + TypeScript) and packaged for Android with Capacitor.
 
 </div>
+
+---
 
 <p align="center">
   <img src=".github/screenshots/now.png" width="30%" alt="Now screen, light theme">

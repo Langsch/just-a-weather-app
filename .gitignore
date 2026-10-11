@@ -26,3 +26,6 @@ dist-ssr
 # Material de trabalho local (contrato das telas e snapshot do design)
 docs/
 design/
+
+# Projeto Remotion dos assets do README (só os renders vão pro git, em .github/assets/)
+banner/
