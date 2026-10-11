@@ -1,12 +1,5 @@
 <div align="center">
 
-```
-      .--.
-   .-(    ).    -=< JUST A WEATHER APP >=-
-  (___.__)__)
-    '  '  '     the weather, straight to the point
-```
-
 A weather app that looks like a terminal, with 1-bit Macintosh-style icons.<br>
 Written as a web app (React + TypeScript) and packaged for Android with Capacitor.
 
