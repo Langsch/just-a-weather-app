@@ -1,0 +1,88 @@
+/*
+ * Tokens do design.
+ * Tema e acento = atributos no <html>: data-theme="light|dark" × data-accent="none|orange|amber|green".
+ */
+
+@font-face {
+  font-family: 'JetBrainsMono NF';
+  src: url('../assets/fonts/JetBrainsMonoNerdFontMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'JetBrainsMono NF';
+  src: url('../assets/fonts/JetBrainsMonoNerdFontMono-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'JetBrainsMono NF';
+  src: url('../assets/fonts/JetBrainsMonoNerdFontMono-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  --font-mono: 'JetBrainsMono NF', ui-monospace, Menlo, monospace;
+  --font-pixel: 'Silkscreen', var(--font-mono);
+
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --gutter: 20px;
+  --tap: 44px;
+
+  --track: 0.08em;
+
+  /* Mono claro */
+  --bg: #f4f1ea;
+  --fg: #0e0e0e;
+  --fg-2: #4a4844;
+  --fg-3: #6e6a63;
+  --surf: #e9e5db;
+  --hair: #cfcac0;
+
+  /* Sem acento: o acento é a própria tinta. */
+  --acc: var(--fg);
+  --acc-rgb: 14, 14, 14;
+  --pill: var(--fg);
+  --ink: var(--bg);
+  --mark: var(--bg);
+  --glow-text: none;
+  --glow-icon: none;
+  --glow-box: none;
+
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --bg: #0e0e0e;
+  --fg: #f4f1ea;
+  --fg-2: #bdb8ad;
+  --fg-3: #8c887f;
+  --surf: #191918;
+  --hair: #2e2d2b;
+  color-scheme: dark;
+}
+
+/* Acentos no claro: só cor, sem brilho. A pílula da navegação continua preta. */
+:root[data-accent='orange'] { --acc: #d9480f; --acc-rgb: 255, 122, 51; --mark: var(--acc); }
+:root[data-accent='amber'] { --acc: #a86a00; --acc-rgb: 255, 176, 0; --mark: var(--acc); }
+:root[data-accent='green'] { --acc: #1e7f3a; --acc-rgb: 57, 255, 106; --mark: var(--acc); }
+
+/* Acentos no escuro: cor de fósforo + brilho. */
+:root[data-theme='dark'][data-accent='orange'] { --acc: #ff7a33; }
+:root[data-theme='dark'][data-accent='amber'] { --acc: #ffb000; }
+:root[data-theme='dark'][data-accent='green'] { --acc: #39ff6a; }
+:root[data-theme='dark']:not([data-accent='none']) {
+  --pill: var(--acc);
+  --ink: #0e0e0e;
+  --mark: #0e0e0e;
+  --glow-text: 0 0 14px rgba(var(--acc-rgb), 0.55);
+  --glow-icon: drop-shadow(0 0 6px rgba(var(--acc-rgb), 0.6));
+  --glow-box: 0 0 12px rgba(var(--acc-rgb), 0.45);
+}

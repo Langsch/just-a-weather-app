@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" shape-rendering="crispEdges">
+  <!-- Mesmo ícone do app (glyph "app" de src/components/glyphs.ts) sobre o fundo escuro. -->
+  <rect width="20" height="20" rx="3" fill="#0e0e0e"/>
+  <path transform="translate(2 2)" fill="#f4f1ea" d="M7 3h2v1h-2zM3 4h1v1h-1zM7 4h2v1h-2zM12 4h1v1h-1zM4 5h1v1h-1zM11 5h1v1h-1zM6 6h4v1h-4zM5 7h6v1h-6zM1 8h2v1h-2zM4 8h8v1h-8zM13 8h2v1h-2zM0 10h16v1h-16zM1 13h1v1h-1zM3 13h1v1h-1zM5 13h1v1h-1zM7 13h1v1h-1zM9 13h1v1h-1zM11 13h1v1h-1zM13 13h1v1h-1zM15 13h1v1h-1z"/>
+</svg>
