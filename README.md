@@ -2,7 +2,6 @@
 
 <img src=".github/assets/banner.gif" width="100%" alt="Just a Weather App">
 
-A weather app that looks like a terminal, Written as a web app (React + TypeScript) and packaged for Android with Capacitor.
 
 </div>
 
